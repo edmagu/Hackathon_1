@@ -1,0 +1,15 @@
+{
+  "name": "groupflow-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GroupFlow AI hackathon MVP",
+  "scripts": {
+    "install-all": "npm install && npm --prefix client install && npm --prefix server install",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
